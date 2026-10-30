@@ -6,17 +6,17 @@
 	</head>
 	<body>
 		<script type="module">
-			import * as Tweakpane from '../node_modules/tweakpane/dist/tweakpane.js';
-			import * as TweakpaneImagePlugin from '../dist/tweakpane-image-plugin.js';
+			import * as Tweakpane from '/node_modules/tweakpane/dist/tweakpane.js';
+			import * as TweakpaneImagePlugin from '/node_modules/tweakpane-image-plugin/dist/tweakpane-image-plugin.js';
 
 			// Blue pixel for testing
 			const img = new Image();
 			img.src =
-				'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==';
+				'/public/_assets/img/textures/isoline3.png';
 			const params = {
 				base64: img,
 				placeholder: 'placeholder',
-				url: 'https://images.unsplash.com/photo-1631875182291-17e8310183ed?q=80&w=500',
+				url: 'http://localhost:8080/public/_assets/img/textures/isoline3.png',
 			};
 
 			document.addEventListener('load', () => {
